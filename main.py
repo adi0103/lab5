@@ -1,7 +1,9 @@
-a = [int(s) for s in input().split()]
-for i in range(len(a)):
-    for j in range(len(a)):
-        if i != j and a[i] == a[j]:
-            break
-    else:
-        print(a[i], end=' ')
+def test(lst, char):
+    result = [i for i in lst if i.startswith(char)]
+    return result
+text = ["abcd", "abc", "bcd", "bkie", "cder", "cdsw", "sdfsd", "dagfa", "acjd"]
+print("\nOriginal list:")
+print(text)
+char = "a"
+print("\nItems start with",char,"from the list:")
+print(test(text, char))
