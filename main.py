@@ -1,13 +1,11 @@
+# create a list
+prime_numbers = [2, 3, 5]
 
-# task
-a = [["Adilet", 100],
-     ["Aidos", 95]]
-name = input("name:")
-for i in range(len(a)):
-    for j in range(len(a)):
-        if name == a[i][0]:
-            print(a[i][0], ":", a[i][1])
-            break
-        else:
-            print("Student jok!")
-            break
+# create another list
+numbers = [1, 4]
+
+# add all elements of prime_numbers to numbers
+numbers.extend(prime_numbers)
+
+
+print('List after extend():', numbers)
