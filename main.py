@@ -1,6 +1,7 @@
-a=input().split()
-p=a[-1]
-for i in range(len(a)-2, -1, -1):
-    a[i+1]=a[i]
-a[0]=p
-print(' '.join(a))
+a = [int(s) for s in input().split()]
+for i in range(len(a)):
+    for j in range(len(a)):
+        if i != j and a[i] == a[j]:
+            break
+    else:
+        print(a[i], end=' ')
